@@ -6,7 +6,9 @@
       background: #fff;
       _background-image: url(about:blank);
       _background-attachment: fixed;
+      margin: 0;
     }
+
     .logo {
       display: flex;
       flex-direction: row;
@@ -59,9 +61,6 @@
         no-repeat;
     }
 
-    .login-form {
-      border: 1px solid red;
-    }
     .tips-wrapper {
       background: #fff8f0;
       width: 100%;
@@ -79,6 +78,169 @@
     }
     .tips-wrapper span {
       font-size: 12px;
+    }
+    .login-bg {
+      background: #e93854;
+      width: 100%;
+      height: 475px;
+      margin: 0;
+      position: relative;
+    }
+
+    .login {
+      width: 349px;
+      height: 400px;
+      position: absolute;
+      right: 10%;
+      top: 10%;
+      background: #ffff;
+      text-align: center;
+    }
+
+    .login .tip {
+      text-align: center;
+      background: #fff8f0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .login .tip .tip-icon {
+      background: url(http://misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2018-0827/i/icon-tips.png);
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+    .login .account-change {
+      width: 100%;
+      height: 60px;
+      margin-top: 20px;
+    }
+    .login .account-change span {
+      font-size: large;
+      height: 20px;
+      width: 49%;
+      display: block;
+      float: left;
+      text-align: center;
+    }
+    .login .account-change span:first-child {
+      border-right: 1px solid #f4f4f4;
+    }
+    .login-form .login-input {
+      border-right: 1px solid #f4f4f4;
+      width: 100%;
+    }
+
+    .login-form {
+      width: 70%;
+      height: 50%;
+      position: relative;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .login-form .login-input #username {
+      border: 1px solid #bdbdbd;
+      height: 38px;
+      width: 100%;
+      text-align: left;
+    }
+
+    .login-form .login-input #username label {
+      border: none;
+      display: inline-block;
+      width: 38px;
+      height: 38px;
+      background: url(http://misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2018-0827/i/pwd-icons-new.png)
+        no-repeat;
+      vertical-align: middle;
+    }
+
+    .login-form .login-input #username input {
+      height: 16px;
+      border: none;
+      font-size: 14px;
+    }
+
+    .login-form .login-input #password {
+      border: 1px solid #bdbdbd;
+      margin-top: 10px;
+      height: 38px;
+      width: 100%;
+      text-align: left;
+    }
+
+    .login-form .login-input #password label {
+      border: none;
+      display: inline-block;
+      width: 38px;
+      height: 38px;
+      background: url(http://misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2018-0827/i/pwd-icons-new.png)
+        no-repeat;
+      vertical-align: middle;
+
+      background-position: -48px 0;
+    }
+
+    .login-form .login-input #password input {
+      height: 16px;
+      border: none;
+    }
+
+    .login-form .forget-password {
+      margin-top: 20px;
+      text-align: right;
+    }
+
+    .login-form .login-btn {
+      margin-top: 20px;
+      text-align: center;
+      font-size: large;
+      background-color: #e4393c;
+      height: 31px;
+      line-height: 31px;
+      color: #fff;
+      font-size: 20px;
+      font-family: "Microsoft YaHei";
+    }
+
+    .login .coagent {
+      margin-bottom: 0px;
+      text-align: left;
+      padding-left: 20px;
+      padding-right: 20px;
+      line-height: 50px;
+      border-top: 1px solid #f4f4f4;
+      height: auto;
+      background-color: #fcfcfc;
+    }
+
+    .qq-icon {
+      width: 19px;
+      height: 18px;
+      background: url(http://misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2018-0827/i/QQ-weixin.png)
+        no-repeat;
+      vertical-align: middle;
+      display: inline-block;
+    }
+    .weixin-icon {
+      width: 19px;
+      height: 18px;
+      display: inline-block;
+      background: url(http://misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2018-0827/i/QQ-weixin.png)
+        no-repeat;
+      background-position: -20px 0;
+      vertical-align: middle;
+    }
+    .arrow-right {
+      width: 16px;
+      height: 16px;
+      background: url(http://misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2018-0827/i/pwd-icons-new.png) -104px -75px
+        no-repeat;
+      vertical-align: middle;
+      display: inline-block;
     }
   </style>
   <body>
@@ -101,17 +263,52 @@
         新版《京东隐私政策》已上线，将更有利于保护您的个人隐私。</span
       >
     </div>
-    <div>
-      <form class="login-form">
-        <td>
-          <tr>
-            fsf
-          </tr>
-          <tr>
-            fsf
-          </tr>
-        </td>
-      </form>
+    <div class="login-bg">
+      <div class="login">
+        <div class="tip">
+          <i class="tip-icon"></i
+          ><span>京东不会以任何理由要求您转账汇款，谨防诈骗。 </span>
+        </div>
+        <div class="account-change">
+          <span>扫码登录</span>
+          <span>账号登录</span>
+        </div>
+        <form class="login-form">
+          <div class="login-input">
+            <div id="username">
+              <label></label>
+              <input
+                type="text"
+                placeholder="邮箱/账号名/登录手机"
+                name="loginname"
+                _input="true"
+                autocomplete="off"
+              />
+            </div>
+            <div id="password">
+              <label></label>
+              <input type="password" placeholder="密码" />
+            </div>
+            <div class="forget-password">
+              <a>忘记密码</a>
+            </div>
+
+            <div class="login-btn">
+              <a>登 录</a>
+            </div>
+          </div>
+        </form>
+        <div class="coagent">
+          <i class="qq-icon"></i>
+          <span>QQ</span>
+          <i class="weixin-icon"></i>
+          <span>微信</span>
+          <div style="float: right">
+            <i class="arrow-right"></i>
+            <span>立即注册</span>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
